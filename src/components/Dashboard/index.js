@@ -15,7 +15,7 @@ class Dashboard extends Component {
         this.logout = this.logout.bind(this)
     }
 
-    async componentDidMount(){
+    componentDidMount(){
         if(!firebase.getCurrent()){
             this.props.history.replace('/login')
             return null
